@@ -1,0 +1,473 @@
+/*This is the code for the body section*/
+body{
+	width:100%;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+	background: white;
+}
+/*This is the code for the heading section*/
+header{
+	padding:5% 2.5% 20% 2.5%;
+	display: flex;/*This code is use for flex propertiers*/
+	flex-direction: column; /*this is used to display column*/
+	justify-content: space-around; /*It gives the space between the content*/
+	background: black; /* It gives the background color*/
+	box-shadow: 0px 3px 3px grey; /* It is used to give shadow*/
+} 
+.h1name{
+	color: #fff;/*it gives color to the text*/
+	margin-bottom: 20px;/*it is used to make the object or text to move to the desired position*/
+	font-size: 20px;  /* It is used to increase or decrease the font size */
+	font-weight: bold;
+}
+/*this is code for the navigation bar*/
+nav{
+	margin: 30px; /* It is used to give margin to the box and text*/
+	padding: 0 20px /* It gives padding */
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	margin:0;
+	background-color: #fafafa;
+	padding: 10px 10px;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 10px white;/* it gives shadow*/
+	-webkit-box-shadow:inset 0px 0px 10px white; /* Compatible witrh safari*/
+}
+nav ul h2{
+	transition: transform 1s;
+}
+/*it is used to hover the navigation bar*/
+nav ul h2:hover{
+	transform: scale(1.2);
+}
+nav ul li{
+	display: inline-block;
+	padding: 0px;
+	margin: 0px 5px;
+	border:0px solid white;
+	border-radius:30px;
+	background-color: white;
+	box-shadow:inset 0px 0px 10px #128cc9;
+	-webkit-box-shadow:inset 0px 0px 10px#128cc9;
+	min-width: 20px;
+	text-align: center; /* It keeps text in center.*/
+	width: 50px;  /* It gives width of the box and text */
+	height: 50px; /* It gives height of the image*/
+	position: relative; /* */
+
+}
+nav ul li div{
+	width: 100%;
+	height: 100%;
+	position: absolute; /* It keeps the object stable*/
+	top: 0;
+	left: 0;
+	border: 0px solid white;  /* It keeps the border*/
+	border-radius: 30px;
+	background-color: #128cc9; /*It gives background color  to the frame */
+	-webkit-transition:width 1s, height 1s, top 1s, left 1s,
+	transition: width 1s,height: 1s, top 1s,left
+	:1s;
+}
+nav ul li a{
+	width: 20px;
+	height: 20px;
+	text-decoration: none;
+	position: absolute;/* */
+	top: 15px;
+	left: 15px;
+	-webkit-transition: top 1s, left 1s;
+	transition: top 1s, left 1s;
+}
+ ul li a span{
+	font-size: 1.9em;
+	color: white;--transition: color 1s;
+	transition: color 1s;
+}
+nav ul li :hover div{
+	width: 0px;
+	height: 0px;
+	top: 25px;
+	left: 25px
+}
+	nav ul li: hover a{
+
+	top: -10px;
+	left: -10px;
+	color: white;
+}
+nav ul li :  hover a span{
+	color: #128cc9;
+}
+.photo{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		padding-top: 35px;
+	}
+	.images img{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%
+	}
+	.images{
+		width: 200px;
+		height: 250px;
+		overflow: hidden;/*It hides the overflowing part*/
+		text-align: center;
+	}
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		transition: 0.75s;
+	}
+	.images:hover img{
+		transform: scale(1.2);
+	}
+	form{
+	display: flex;
+	flex-direction: column;
+	margin:2% 15% 2% 15%;
+}
+form h2{
+	transition: transform 1s;
+}
+form h2:hover{
+	transform:scale(1.2);
+}
+form .input{
+	padding: 2%;
+	margin:2% 14% 2% 16% ;
+	border-radius: 10px;
+	border:1px solid rgba(0,0,0,0.5);
+}
+.btn1{
+	margin:1% 65% 2% 24%;
+	padding: 10px;
+	border-radius: 10px;
+	border:1px solid rgba(0,0,0,0.5);
+}
+/*this is used to make responsive design*/
+@media only screen and (max-width:830px){
+	header{
+		padding:5% 2.5% 20% 2.5%;
+		display: flex;
+		flex-direction: column;
+	}
+	.h1name{
+		margin-bottom: 20px;
+		font-size: 20px;
+	}
+	header div a{
+		margin:0px;
+		padding:9px;
+		display: inline;
+	}
+	form{
+		margin:9% 10% ;
+	}
+	form .input{
+		margin-top:5%;
+	}
+	.btn1{
+		margin:1% 65% 2% 24%;
+	}
+	.btn1{
+		margin:1% 55% 2% 24%; 
+	}
+	footer{
+		margin-top:17%;
+	}
+	footer ul li{
+		margin:2%;
+		display: block;
+	}
+}
+header div a{
+	text-decoration: none;
+	color: #fff;
+	width: 100%;
+	padding: 9px;
+	margin: 0px;
+	display: inline;
+}
+header  div a:hover{
+	color: #000;
+	background: #DFE2DB;
+	box-shadow: 1px 1px 1px #fff, -2px -1px 1px #fff;
+	border-radius: 4px;
+}
+.division{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.box{
+	width: 500px;
+	height: 400px;
+	border-radius: 5px;
+}
+.sec{
+	border:5px solid blue;
+	border-radius: 5px;
+
+}
+.division1{
+	border-radius: 5px;
+	border:5px solid black;
+	height: 250px;
+}
+ p a:hover{
+	font-size: 50px;
+	background-color: pink;
+}
+.desc1{
+	margin-top: 5%;
+	margin-bottom: 10%;
+	padding: 1% 20% 1% 20%;
+	font-size: 20px;
+}
+.social-med{
+	color: white;
+	margin: 1% 15% 1% 15%;
+	padding-bottom: 3%;
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	background: #505050;
+	border-radius: 20px;
+	box-shadow: 1px 2px 3px gray;
+}
+.social-med .socialimg{
+	margin-top: 5%;
+	margin-bottom: 3%;
+	border: 1px solid #000;
+	width: 70%;
+}
+header div a{
+	text-decoration: none;
+	color:#fff;
+	width:100%;
+	padding:10px;
+	margin:0 20px 0 20px;
+	display: inline;
+}
+header  div a:hover{
+	color:#000;
+	background: #DFE2DB;
+	box-shadow: 1px 1px 1px #fff, -2px -1px 1px #fff;
+	border-radius: 4px;
+}
+fieldset{
+	display: block;
+	margin-left: 2px;
+	margin-right: 2px;
+	border: 3px groove;
+	padding-top: 0.35em;
+	padding-bottom: 0.625em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
+}
+.color{
+	background: #262626;
+}
+.back{
+	background-color: #9695A7;
+
+}
+.fa{
+	font-size: 50px;
+	padding: 20px;
+	
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+	position: relative;
+	color: #262626;
+	transition: -5s;
+
+}
+.fa:hover{
+	transform: rotate(360deg);/*it rotates the image*/
+	opacity: 0.5;/*it makes object transparent*/
+	transition: scale(1.2);
+}
+
+.fa-facebook{
+	background: #3B5998;
+	color: white;
+	transition: 0.75s;
+}
+.fa-linkedin{
+	background: #007bb5;
+	color: white;
+	transition: 0.75s
+}
+.fa-instagram{
+	background: #125688;
+	color: white;
+	transition: 0.75s
+}
+.fa-google{
+	background: #dd4b39;
+	color: white;
+	transition: 0.75s
+}
+.Social{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;/* Items are placed with space between lines*/
+	width: 100%;
+	padding-top: 35px;
+	list-style: none;
+}
+.photos a{
+	width: 70px;
+	height: 50px;
+	font-size: 50px;
+}
+.hover :hover{
+	transform: scale(2,2);
+}
+p{
+	margin: auto;
+	width: 40%;
+	border: 3px;
+	padding: 10px;
+	line-height: 1.5;
+	display: inline-block;/* It doesnot break a line*/
+	vertical-align: middle;/* It sets the vertical alignment of an element*/
+}
+ img{
+		border-radius:50px;
+		height: 150px;
+		width: 250px;
+	}
+	.image{
+		width: 1340px;
+		height: 250px;
+		overflow: hidden;/*It makes the content invisible*/
+		background-color: grey;
+	}
+	div img{
+		transition: 0.75s;
+		text-align: center;
+		height: 250px;
+		width: 250px;
+	}
+	/*it hovers the image*/
+	.image:hover img{
+		transform: scale(2.0);
+	}
+	/*this is the code for footer part*/
+footer{
+	margin-top: 15%;
+	background: linear-gradient(to top, #191919, #DFE2DB);/* it makes element goes down, up, right and left diagonally*/
+}
+footer p{
+	background: black;
+	color: white;
+}
+footer ul{
+	list-style: none;
+}
+footer ul li{
+	margin: 2%;
+	display: block;
+}
+footer a{
+	text-decoration: none;
+	color: #000;
+}
+footer a:hover{
+	color: #515151;
+}
+footer li:hover{
+	color: #515151;
+}
+@media screen and (min-width:786px){
+	body{
+		width:100%;
+	}
+	header{
+		padding: 10% 5% 10% 5%;
+		display: flex;
+		flex-direction: row;/* It displays the items horizontally*/
+	}
+	.h1name{
+		font-size: 30px;
+	}
+	header div a{
+		margin: 0 20px 0 20px;
+		padding: 10px;
+	}
+	.desc1{
+		margin-bottom: 10%;
+		font-size: 20px;
+	}
+	.social-med{
+		font-size: 20px;
+	}
+	footer{
+		margin-top:10.5%;
+	}
+}
+.sec:hover{
+	font-size: 30px;
+}
+@media screen and (max-width: 600px){
+	.image{width: 150px;height: 150px;text-align: center;}
+	header{
+		padding: 10% 5% 10% 5%;
+		display: flex;
+		flex-direction: column;
+	}
+    .h1name{
+		font-size: 30px;
+	}
+
+
+	header div a{
+		margin: 0 20px 0 20px;
+		padding: 10px;
+	}
+	.photo{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		padding-top: 35px;
+		margin-left: 120px;
+	}
+	.images img{
+		width: 200px;
+		height: 200px;
+		border-radius: 50%
+	}
+	.images{
+		width: 200px;
+		height: 250px;
+		overflow: hidden;
+		text-align: center;
+	}
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		transition: 0.75s;
+	}
+	.images:hover img{
+		transform: scale(1.2);
+	}
+	iframe{width: 350px;
+	}
+	.Social{display: flex;flex-direction: column;}
+	.photos{display: flex;flex-direction: column;padding: 20px;}
+}
